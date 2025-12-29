@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | عيادة د. بسام طه</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-stethoscope"></i> د. بسام طه خضير
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الدكتور</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="فتح القائمة">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- البطل -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>تواصل مع عيادة الدكتور</h1>
+            <p>نرحب باستفساراتكم ونعد بالرد في أسرع وقت ممكن.</p>
+        </div>
+    </section>
+
+    <!-- معلومات الاتصال -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="card contact-card">
+                    <div class="contact-icon" style="background: #e3f2fd; color: #0d6efd;">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>العنوان</h3>
+                    <p>13 ش المعهد الدينى، الحوامدية، الجيزة</p>
+                    <a href="https://maps.google.com/?q=13+ش+المعهد+الديني+الحوامدية+الجيزة" 
+                       target="_blank" class="btn-link">
+                        <i class="fas fa-map"></i> عرض الخريطة
+                    </a>
+                </div>
+
+                <div class="card contact-card">
+                    <div class="contact-icon" style="background: #f3e5f5; color: #6f42c1;">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>الهواتف</h3>
+                    <p dir="ltr">العيادة: 0238114682</p>
+                    <p dir="ltr">موبايل: 01010106683</p>
+                    <a href="tel:01010106683" class="btn-link">
+                        <i class="fas fa-phone"></i> اتصل الآن
+                    </a>
+                </div>
+
+                <div class="card contact-card">
+                    <div class="contact-icon" style="background: #e8f5e9; color: #198754;">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>ساعات العمل</h3>
+                    <p><strong>السبت - الخميس:</strong> ٩ صباحًا - ٩ مساءً</p>
+                    <p><strong>الجمعة:</strong> <span>مغلق</span></p>
+                    <small>لحالات الطوارئ اتصل على الموبايل</small>
+                </div>
+
+                <div class="card contact-card">
+                    <div class="contact-icon" style="background: #fff3cd; color: #fd7e14;">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p dir="ltr">info@drbassamclinic.com</p>
+                    <small>الرد خلال 24 ساعة عمل</small>
+                    <a href="mailto:info@drbassamclinic.com" class="btn-link">
+                        <i class="fas fa-paper-plane"></i> أرسل بريد
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الاتصال -->
+    <section class="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>أرسل لنا رسالة</h2>
+                <p>سنرد عليك في أقرب وقت ممكن. جميع المعلومات سرية.</p>
+                
+                <form id="contactForm" class="whatsapp-form">
+                    <div class="form-group">
+                        <label for="name">الاسم بالكامل *</label>
+                        <input type="text" id="name" name="name" required placeholder="أدخل اسمك بالكامل">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف *</label>
+                            <input type="tel" id="phone" name="phone" required 
+                                   placeholder="مثال: 01010106683" dir="ltr" pattern="[0-9]{10,15}">
+                            <small class="form-hint">(10-15 رقم)</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" dir="ltr" placeholder="example@email.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">نوع الخدمة المطلوبة *</label>
+                        <select id="service" name="service" required>
+                            <option value="">اختر الخدمة</option>
+                            <option value="consultation">استشارة طبية</option>
+                            <option value="appointment">حجز موعد</option>
+                            <option value="followup">متابعة حالة</option>
+                            <option value="emergency">حالة طارئة</option>
+                            <option value="inquiry">استفسار عام</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">الرسالة *</label>
+                        <textarea id="message" name="message" rows="5" required 
+                                  placeholder="أدخل رسالتك هنا..."></textarea>
+                    </div>
+                    
+                    <div class="form-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span>سيتم فتح تطبيق واتساب لإرسال الرسالة مباشرة</span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> إرسال عبر الواتساب
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- معلومات إضافية -->
+    <section class="contact-extra">
+        <div class="container">
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>رد سريع</h3>
+                    <p>نعد بالرد على استفساراتكم خلال 24 ساعة عمل كحد أقصى.</p>
+                </div>
+                <div class="card">
+                    <h3>خصوصية تامة</h3>
+                    <p>جميع معلوماتكم محفوظة بسرية ولن يتم مشاركتها مع أي طرف ثالث.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خريطة -->
+    <section class="map-section">
+        <div class="container">
+            <h2>موقع العيادة</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.12345678901234!3d29.98765432109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU5JzE1LjYiTiAzMcKwMDcnMjguNCJF!5e0!3m2!1sar!2seg!4v1234567890123!5m2!1sar!2seg" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="خريطة موقع العيادة">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+<!-- الفوتر الجديد -->
+<footer class="modern-footer">
+    <div class="container">
+        <!-- القسم العلوي -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-stethoscope"></i>
+                    <div>
+                        <h3>د. بسام طه خضير</h3>
+                        <p class="clinic-specialty">استشاري جراحة الأنف والأذن والحنجرة</p>
+                    </div>
+                </div>
+                <p class="clinic-description">
+                    نقدم رعاية طبية متكاملة باستخدام أحدث التقنيات لتشخيص وعلاج أمراض الأنف والأذن والحنجرة بدقة واحترافية.
+                </p>
+                <div class="footer-social">
+                    <a href="https://wa.me/201010106683" target="_blank" class="social-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>واتساب</span>
+                    </a>
+                    <a href="tel:01010106683" class="social-btn phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>اتصال</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-left"></i> عن الدكتور</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-left"></i> خدماتنا</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>معلومات التواصل</h4>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>العنوان</strong>
+                        <p>13 ش المعهد الدينى، الحوامدية، الجيزة</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>الهواتف</strong>
+                        <p>0238114682 - 01010106683</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>البريد الإلكتروني</strong>
+                        <p>info@drbassamclinic.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>ساعات العمل</strong>
+                        <p>السبت - الخميس: 9 ص - 9 م<br>الجمعة: مغلق</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الخط الفاصل -->
+        <div class="footer-divider">
+            <div class="divider-line"></div>
+            <i class="fas fa-heartbeat"></i>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- القسم السفلي -->
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year">2025</span> عيادة الدكتور بسام طه خضير. جميع الحقوق محفوظة.</p>
+                <p class="made-with">صنع ب ❤️ لخدمة المرضى</p>
+            </div>
+            
+            <div class="footer-actions">
+                <a href="contact.html" class="action-btn">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>احجز موعد الآن</span>
+                </a>
+                <a href="tel:01010106683" class="action-btn emergency-btn">
+                    <i class="fas fa-ambulance"></i>
+                    <span>حالات الطوارئ</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js" defer></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
