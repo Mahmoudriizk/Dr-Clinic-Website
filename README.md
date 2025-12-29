@@ -4,7 +4,7 @@ A multi-page frontend website for a clinic.
 The project provides information about the clinic, services offered, and a contact page for patients.
 
 ## 🚀 Live Demo
-(Will be added after enabling GitHub Pages)
+https://mahmoudriizk.github.io/Dr-Clinic-Website/
 
 ## 🛠️ Technologies Used
 - HTML5
